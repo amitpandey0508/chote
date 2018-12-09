@@ -1,2 +1,9 @@
-this is my first file
-second commit
+---
+- hosts: all
+  remote_user: ans1
+  become: true
+  tasks:
+  - name: to install httpd
+    yum: pkg=httpd state=latest
+    service: name=httpd state=started
+  

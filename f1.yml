@@ -5,5 +5,5 @@
   tasks:
   - name: to install httpd
     yum: pkg=httpd state=latest
- -  service: name=httpd state=started
+  - service: name=httpd state=started
   
